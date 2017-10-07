@@ -8,22 +8,29 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {TodaysPage} from "../pages/todays/todays";
+import {HistoryPage} from "../pages/history/history";
+import {BonusPage} from "../pages/bonus/bonus";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    TodaysPage,
+    HistoryPage,
+    BonusPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    TodaysPage,
+    HistoryPage,
+    BonusPage
   ],
   providers: [
     StatusBar,
