@@ -16,32 +16,17 @@
 
 <ion-content >
 
-  <ion-card class="card" *ngFor="let tip of tips">
-    <ion-card-header class="top">
-      <ion-grid >
-        <ion-row align-items-center>
-          <ion-col col-5>{{tip.DATE.toString().substring(8,10)}}-{{tip.DATE.toString().substring(5,7)}}-{{tip.DATE.toString().substring(0,4)}}</ion-col>
-          <ion-col col-4 text-left>{{tip.COUNTRY_LEAGUE}}</ion-col>
-          <ion-col col-3 text-right>{{tip.TIME}}</ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-header>
-    <ion-card-title text-center class="middle">
-      <ion-grid >
-        <ion-row>
-          <ion-col ion-text col-8 >{{tip.HOME_TEAM}} VS {{tip.AWAY_TEAM}}</ion-col>
-          <ion-col col-3 text-right>{{tip.Gotcha}}</ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-title>
-    <ion-card-content class="bottom">
-      <ion-grid >
-        <ion-row align-items-center>
-          <ion-col ion-text col-6 text-left>Odd : {{tip.ODD}}</ion-col>
-          <ion-col col-6 text-right>{{tip.TIP}}</ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
+  <ion-list>
+    <ion-item *ngFor="let tip of tips">
+      <ion-avatar item-start>
+        <img src="../../assets/icon/favicon.ico">
+      </ion-avatar>
+      <h2>{{tip.TIP}} @ {{tip.ODD}}</h2>
+      <h3>{{tip.HOME_TEAM}} VS {{tip.AWAY_TEAM}}</h3>
+      <p>{{tip.COUNTRY_LEAGUE}} | {{tip.DATE.toString().substring(8,10)}}-{{tip.DATE.toString().substring(5,7)}}-{{tip.DATE.toString().substring(0,4)}} | {{tip.TIME}}</p>
+    </ion-item>
+  </ion-list>
+
+  
 
 </ion-content>

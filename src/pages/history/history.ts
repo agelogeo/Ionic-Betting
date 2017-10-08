@@ -14,7 +14,8 @@ import {Http} from "@angular/http";
   selector: 'page-history',
   templateUrl: 'history.html',
 })
-export class HistoryPage implements OnInit{
+export class HistoryPage implements OnInit
+{
 
   tips:any;
   sheetName: string = 'standard_history';
