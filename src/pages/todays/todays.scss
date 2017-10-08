@@ -20,4 +20,9 @@ page-todays {
   .default{
     background-color: #797979;
   }
+  #image{
+    color: #38bb38;
+
+  }
+  .grayscale {-webkit-filter: hue-rotate(300deg); filter: hue-rotate(300deg);}
 }
