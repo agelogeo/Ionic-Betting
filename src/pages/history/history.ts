@@ -40,4 +40,24 @@ export class HistoryPage implements OnInit
       console.log(this.tips);
     })
   }
+
+  checkScore(gotcha : any){
+    if(gotcha.toString() == "true"){
+      return "gotchaTrue";
+    }else if(gotcha.toString() == "false"){
+      return "gotchaFalse";
+    }
+    return "primary";
+  }
+
+  checkAvatar(gotcha : any){
+
+    if(gotcha.toString() == "true"){
+      return "assets/true.png";
+    }else if(gotcha.toString() == "false"){
+      return "assets/false.png";
+    }
+    return "assets/ball.png";
+  }
+
 }
