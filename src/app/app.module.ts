@@ -12,6 +12,8 @@ import {BonusPage} from "../pages/bonus/bonus";
 import {HttpModule} from "@angular/http";
 import {TabsPage} from "../pages/tabs/tabs";
 import {TodaysAltPage} from "../pages/todays-alt/todays-alt";
+import {HistoryTabsPage} from "../pages/history-tabs/history-tabs";
+import {HistoryAltPage} from "../pages/history-alt/history-alt";
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import {TodaysAltPage} from "../pages/todays-alt/todays-alt";
     TodaysPage,
     TodaysAltPage,
     HistoryPage,
+    HistoryAltPage,
     BonusPage,
-    TabsPage
+    TabsPage,
+    HistoryTabsPage
   ],
   imports: [
     BrowserModule,
@@ -33,8 +37,10 @@ import {TodaysAltPage} from "../pages/todays-alt/todays-alt";
     TodaysPage,
     TodaysAltPage,
     HistoryPage,
+    HistoryAltPage,
     BonusPage,
-    TabsPage
+    TabsPage,
+    HistoryTabsPage
   ],
   providers: [
     StatusBar,

@@ -4,7 +4,7 @@ import {Http} from "@angular/http";
 import 'rxjs';
 
 /**
- * Generated class for the HistoryPage page.
+ * Generated class for the HistoryAltPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,32 +12,27 @@ import 'rxjs';
 
 @IonicPage()
 @Component({
-  selector: 'page-history',
-  templateUrl: 'history.html',
+  selector: 'page-history-alt',
+  templateUrl: 'history-alt.html',
 })
-export class HistoryPage implements OnInit
-{
+export class HistoryAltPage implements OnInit{
 
   tips:any;
-  sheetName: string = 'standard_history';
+  sheetName: string = 'tameiarxis_history';
   sheetID: string = '175XqnHhcOS8CVoBY08xMhaDO39VmauBEFKU9qeaHS3U';
 
-
   constructor(public navCtrl: NavController, public navParams: NavParams,private http:Http) {
-
   }
 
-
-  ionViewWillEnter() {
-    console.log('ionViewDidLoad HistoryPage');
-
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HistoryAltPage');
   }
 
   ngOnInit(){
     console.log('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id='+this.sheetID+'&sheet='+this.sheetName);
     this.http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id='+this.sheetID+'&sheet='+this.sheetName)
       .map(res => res.json()).subscribe(data => {
-      this.tips = data.standard_history;
+      this.tips = data.tameiarxis_history;
       console.log(this.tips);
     })
   }
@@ -60,5 +55,4 @@ export class HistoryPage implements OnInit
     }
     return "assets/ball.png";
   }
-
 }
