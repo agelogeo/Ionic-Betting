@@ -10,13 +10,17 @@ import {TodaysPage} from "../pages/todays/todays";
 import {HistoryPage} from "../pages/history/history";
 import {BonusPage} from "../pages/bonus/bonus";
 import {HttpModule} from "@angular/http";
+import {TabsPage} from "../pages/tabs/tabs";
+import {TodaysAltPage} from "../pages/todays-alt/todays-alt";
 
 @NgModule({
   declarations: [
     MyApp,
     TodaysPage,
+    TodaysAltPage,
     HistoryPage,
-    BonusPage
+    BonusPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,10 @@ import {HttpModule} from "@angular/http";
   entryComponents: [
     MyApp,
     TodaysPage,
+    TodaysAltPage,
     HistoryPage,
-    BonusPage
+    BonusPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
