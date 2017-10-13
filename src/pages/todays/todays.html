@@ -20,11 +20,11 @@
     <ion-item-sliding *ngFor="let tip of tips">
       <ion-item>
         <ion-avatar item-start>
-          <img src="assets/icon/favicon.ico">
+          <img src="assets/ball.png">
         </ion-avatar>
         <h2>{{tip.TIP}} @ {{tip.ODD}}</h2>
         <h3>{{tip.HOME_TEAM}} VS {{tip.AWAY_TEAM}}</h3>
-        <p>{{tip.COUNTRY_LEAGUE}} | {{tip.DATE.toString().substring(8,10)}}-{{tip.DATE.toString().substring(5,7)}}-{{tip.DATE.toString().substring(0,4)}} | {{tip.TIME}}</p>
+        <p color="menuSubText">{{tip.COUNTRY_LEAGUE}} | {{tip.DATE.toString().substring(8,10)}}-{{tip.DATE.toString().substring(5,7)}}-{{tip.DATE.toString().substring(0,4)}} | {{tip.TIME}}</p>
       </ion-item>
         <ion-item-options >
           <h4 text-right ion-item color="primary">{{tip.HOME_SCORE}} - {{tip.AWAY_SCORE}}</h4>
@@ -34,7 +34,4 @@
         </ion-item-options>
     </ion-item-sliding>
   </ion-list>
-
-
-
 </ion-content>

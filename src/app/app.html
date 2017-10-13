@@ -1,13 +1,17 @@
-<ion-menu type="reveal" [content]="content" >
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-menu type="reveal" [content]="content">
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item item-left *ngFor="let p of pages" (click)="openPage(p)"><ion-icon name="{{p.icon}}"></ion-icon>
+
+  <ion-content class="menu-side-background">
+    <div id="menuBackground">
+      <h4>Daily Betting Tips</h4>
+      <p>dailybettingapp@gmail.com</p>
+      <img src="assets/background.png" alt="background" />
+
+
+    </div>
+
+    <ion-list no-lines >
+      <button class="menu-side-background" menuClose ion-item item-left *ngFor="let p of pages" (click)="openPage(p)"><ion-icon name="{{p.icon}}"></ion-icon>
         {{p.title}}
       </button>
     </ion-list>

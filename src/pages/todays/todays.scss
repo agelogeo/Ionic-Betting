@@ -1,28 +1,17 @@
 page-todays {
-  .card {
-    border-radius : 30px;
-  }
-  .top{
-    background-color: #e9eb04;
-  }
-  .middle{
-    background-color: rgb(255, 255, 255);
-  }
-  .bottom{
-    background-color: #009fb2;
-  }
-  .positive{
-    background-color: #38bb38;
-  }
-  .negative{
-    background-color: #bb3838;
-  }
-  .default{
-    background-color: #797979;
-  }
-  #image{
-    color: #38bb38;
 
+  ion-item , ion-content{
+    background-color : color($colors, menuBackground , base) !important;
   }
+
+  h2 , h3  {
+    color : color($colors, menuText, base);
+  }
+
   .grayscale {-webkit-filter: hue-rotate(300deg); filter: hue-rotate(300deg);}
+
+  p {
+    color : color($colors, menuSubText, base) !important;
+  }
+
 }

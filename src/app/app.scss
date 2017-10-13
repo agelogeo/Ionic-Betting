@@ -15,3 +15,40 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.menu-side-background{
+  background-color: color($colors, menuBackground, base);
+  color : color($colors, menuText, base);
+
+  ion-icon{
+    color : color($colors, menuHeader, base);
+  }
+}
+
+#menuHeader {
+  color: color($colors, menuHeader, base);
+  background-color: color($colors, menuHeader, base) !important;
+}
+
+
+#menuBackground {
+    position: relative;
+    width: 100%; /* for IE 6 */
+
+  h4 {
+    position: absolute;
+    bottom : 30px;
+    color : color($colors, menuText, base);
+    left : 10px;
+    width: 100%;
+  }
+
+  p {
+    position: absolute;
+    bottom : 5px;
+    color : color($colors, menuText, base);
+    left : 10px;
+    width: 100%;
+  }
+
+
+}

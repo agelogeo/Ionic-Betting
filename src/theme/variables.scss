@@ -38,21 +38,26 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+
+  menuBackground: #474747,
+  menuText : #f4f4f4,
+  menuHeader : #e84c3d,
+  menuSubText : #a8a7a5
 );
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
+$toolbar-ios-background:                   color($colors, menuHeader);
 
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
+$toolbar-md-background:                   color($colors, menuHeader);
 
 
 
