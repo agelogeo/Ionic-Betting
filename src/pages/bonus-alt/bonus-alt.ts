@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {OperatorhomePage} from "../operatorhome/operatorhome";
 
 /**
- * Generated class for the OperatorsignupPage page.
+ * Generated class for the BonusAltPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import {OperatorhomePage} from "../operatorhome/operatorhome";
 
 @IonicPage()
 @Component({
-  selector: 'page-operatorsignup',
-  templateUrl: 'operatorsignup.html',
+  selector: 'page-bonus-alt',
+  templateUrl: 'bonus-alt.html',
 })
-export class OperatorsignupPage {
+export class BonusAltPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OperatorsignupPage');
+    console.log('ionViewDidLoad BonusAltPage');
   }
 
-  onGoToOperatorHome(){
-    this.navCtrl.setRoot(OperatorhomePage);
-  }
 }

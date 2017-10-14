@@ -3,9 +3,9 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import {BonusPage} from "../pages/bonus/bonus";
 import {TabsPage} from "../pages/tabs/tabs";
 import {HistoryTabsPage} from "../pages/history-tabs/history-tabs";
+import {BonusTabsPage} from "../pages/bonus-tabs/bonus-tabs";
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +24,7 @@ export class MyApp {
     this.pages = [
       { title: 'Today\'s Tips', component: TabsPage , icon : 'home' },
       { title: 'History of Tips', component: HistoryTabsPage , icon : 'paper' },
-      { title: 'Bonus Tips', component: BonusPage , icon : 'flame' }
+      { title: 'Bonus Tips', component: BonusTabsPage , icon : 'flame' }
     ];
 
   }

@@ -14,17 +14,21 @@ import {TabsPage} from "../pages/tabs/tabs";
 import {TodaysAltPage} from "../pages/todays-alt/todays-alt";
 import {HistoryTabsPage} from "../pages/history-tabs/history-tabs";
 import {HistoryAltPage} from "../pages/history-alt/history-alt";
+import {BonusTabsPage} from "../pages/bonus-tabs/bonus-tabs";
+import {BonusAltPage} from "../pages/bonus-alt/bonus-alt";
 
 @NgModule({
   declarations: [
     MyApp,
     TodaysPage,
     TodaysAltPage,
+    TabsPage,
     HistoryPage,
     HistoryAltPage,
+    HistoryTabsPage,
     BonusPage,
-    TabsPage,
-    HistoryTabsPage
+    BonusAltPage,
+    BonusTabsPage,
   ],
   imports: [
     BrowserModule,
@@ -36,11 +40,13 @@ import {HistoryAltPage} from "../pages/history-alt/history-alt";
     MyApp,
     TodaysPage,
     TodaysAltPage,
+    TabsPage,
     HistoryPage,
     HistoryAltPage,
+    HistoryTabsPage,
     BonusPage,
-    TabsPage,
-    HistoryTabsPage
+    BonusAltPage,
+    BonusTabsPage,
   ],
   providers: [
     StatusBar,
