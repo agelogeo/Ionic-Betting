@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams, PopoverController} from 'ionic-angular';
 import {Http} from "@angular/http";
 import 'rxjs';
+import {SocialSharing} from "@ionic-native/social-sharing";
+import {SharePage} from "../share/share";
 
 /**
  * Generated class for the TodaysPage page.
@@ -22,7 +24,8 @@ export class TodaysPage implements OnInit{
   sheetID: string = '175XqnHhcOS8CVoBY08xMhaDO39VmauBEFKU9qeaHS3U';
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private http:Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private http:Http,
+              private socialSharing: SocialSharing,private popoverCtrl: PopoverController) {
 
   }
 
@@ -41,4 +44,24 @@ export class TodaysPage implements OnInit{
     })
   }
 
+
+  regularShare(event: MouseEvent){
+    const popover = this.popoverCtrl.create(SharePage);
+    popover.present({ev: event});
+    popover.onDidDismiss(
+      data => {
+        if (data == null) {
+
+        }else{
+          if (data.action == "android"){
+            this.socialSharing.share("Hello can you install this app?", "Daily Betting Tips", null, "https://play.google.com/store/apps/details?id=gr.betting.admin.bettingtips");
+          } else if (data.action == "ios"){
+
+          }else if (data.action == "windows"){
+
+          }
+        }
+      }
+    )
+  }
 }

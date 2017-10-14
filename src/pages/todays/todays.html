@@ -6,10 +6,15 @@
 -->
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Today's Tips</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-left (click)="regularShare($event)"><ion-icon name="share"></ion-icon>Share</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 

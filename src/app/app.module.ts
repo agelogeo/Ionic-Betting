@@ -16,6 +16,8 @@ import {HistoryTabsPage} from "../pages/history-tabs/history-tabs";
 import {HistoryAltPage} from "../pages/history-alt/history-alt";
 import {BonusTabsPage} from "../pages/bonus-tabs/bonus-tabs";
 import {BonusAltPage} from "../pages/bonus-alt/bonus-alt";
+import {SocialSharing} from "@ionic-native/social-sharing";
+import {SharePage} from "../pages/share/share";
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import {BonusAltPage} from "../pages/bonus-alt/bonus-alt";
     BonusPage,
     BonusAltPage,
     BonusTabsPage,
+    SharePage
   ],
   imports: [
     BrowserModule,
@@ -47,10 +50,12 @@ import {BonusAltPage} from "../pages/bonus-alt/bonus-alt";
     BonusPage,
     BonusAltPage,
     BonusTabsPage,
+    SharePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
