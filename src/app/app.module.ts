@@ -18,6 +18,10 @@ import {BonusTabsPage} from "../pages/bonus-tabs/bonus-tabs";
 import {BonusAltPage} from "../pages/bonus-alt/bonus-alt";
 import {SocialSharing} from "@ionic-native/social-sharing";
 import {SharePage} from "../pages/share/share";
+import {GuideZeroPage} from "../pages/guide-zero/guide-zero";
+import {GuideOnePage} from "../pages/guide-one/guide-one";
+import {GuideMngPage} from "../pages/guide-mng/guide-mng";
+import {GuideTabs} from "../pages/guide-tabs/guide-tabs";
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import {SharePage} from "../pages/share/share";
     BonusPage,
     BonusAltPage,
     BonusTabsPage,
-    SharePage
+    SharePage,
+    GuideZeroPage,
+    GuideOnePage,
+    GuideMngPage,
+    GuideTabs
   ],
   imports: [
     BrowserModule,
@@ -50,7 +58,11 @@ import {SharePage} from "../pages/share/share";
     BonusPage,
     BonusAltPage,
     BonusTabsPage,
-    SharePage
+    SharePage,
+    GuideZeroPage,
+    GuideOnePage,
+    GuideMngPage,
+    GuideTabs
   ],
   providers: [
     StatusBar,

@@ -1,11 +1,14 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import {Nav, Platform, PopoverController} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {TabsPage} from "../pages/tabs/tabs";
 import {HistoryTabsPage} from "../pages/history-tabs/history-tabs";
 import {BonusTabsPage} from "../pages/bonus-tabs/bonus-tabs";
+import {GuideTabs} from "../pages/guide-tabs/guide-tabs";
+import {SharePage} from "../pages/share/share";
+import {SocialSharing} from "@ionic-native/social-sharing";
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +27,8 @@ export class MyApp {
     this.pages = [
       { title: 'Today\'s Tips', component: TabsPage , icon : 'home' },
       { title: 'History of Tips', component: HistoryTabsPage , icon : 'paper' },
-      { title: 'Bonus Tips', component: BonusTabsPage , icon : 'flame' }
+      { title: 'Bonus Tips', component: BonusTabsPage , icon : 'flame' },
+      { title: 'Betting Guide', component: GuideTabs , icon : 'flame' }
     ];
 
   }
@@ -43,4 +47,6 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+
 }

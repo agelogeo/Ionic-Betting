@@ -5,7 +5,11 @@ import {ViewController} from "ionic-angular";
   selector: 'page-share',
   template: `
     <ion-grid text-center>
-      
+      <ion-row>
+        <ion-col>
+          <h4>Choose your platform</h4>
+        </ion-col>
+      </ion-row>
       <ion-row>
         <ion-col>
           <button ion-button icon-left outline round block color="menuText" (click)="onAction('android')"><ion-icon name="logo-android"></ion-icon>Android</button>
